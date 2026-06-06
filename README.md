@@ -1,6 +1,6 @@
 # tinybeat-pregnancy
 
-The pregnancy **domain** plugin for a BYOA ("agent-as-backend") app. All the
+The pregnancy **domain** plugin for a BYOH ("agent-as-backend") app. All the
 reusable machinery — the outbound relay dialer, the per-session tool sandbox,
 typed-tool / RPC autodiscovery, the local-SQLite storage engine with automatic
 change-events, and the migration runner — lives in the

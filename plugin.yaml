@@ -1,7 +1,7 @@
 name: tinybeat-pregnancy
 version: 0.1.0
-description: "BYOA bridge — exposes Hermes agent + typed workflow tools to a remote SaaS UI via a localhost relay."
-author: "BYOA"
+description: "BYOH bridge — exposes Hermes agent + typed workflow tools to a remote SaaS UI via a localhost relay."
+author: "BYOH"
 kind: standalone
 hooks: []
 provides_tools:
