@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "tinybeat" }]
-keywords = ["hermes", "byoh", "byoh", "pregnancy", "plugin", "local-first", "sqlite"]
+keywords = ["hermes", "byoh", "pregnancy", "plugin", "local-first", "sqlite"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",
@@ -19,6 +19,11 @@ classifiers = [
 dependencies = [
   "byoh-bridge",
 ]
+
+[project.urls]
+Homepage = "https://github.com/sumanthakkala/tinybeat-pregnancy"
+Repository = "https://github.com/sumanthakkala/tinybeat-pregnancy"
+Framework = "https://github.com/sumanthakkala/byoh-bridge"
 
 [tool.setuptools.packages.find]
 where = ["src"]

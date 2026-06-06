@@ -4,8 +4,8 @@ The pregnancy **domain** plugin for a BYOH ("agent-as-backend") app. All the
 reusable machinery — the outbound relay dialer, the per-session tool sandbox,
 typed-tool / RPC autodiscovery, the local-SQLite storage engine with automatic
 change-events, and the migration runner — lives in the
-[`byoh-bridge`](https://github.com/) framework. This package contributes only
-the domain:
+[`byoh-bridge`](https://github.com/sumanthakkala/byoh-bridge) framework. This
+package contributes only the domain:
 
 - **11 workflows** (`src/tinybeat_pregnancy/workflows/`): weight logging, blood
   pressure, blood glucose, symptoms, appointments, appointment checklist, report
@@ -21,7 +21,7 @@ The whole plugin is wired by one `AppConfig` in
 ## Install
 
 ```bash
-git clone <this-repo> tinybeat-pregnancy
+git clone https://github.com/sumanthakkala/tinybeat-pregnancy
 cd tinybeat-pregnancy
 ~/.hermes/hermes-agent/venv/bin/pip install -e .      # pulls in byoh-bridge
 ```
