@@ -1,0 +1,25 @@
+name: tinybeat-pregnancy
+version: 0.1.0
+description: "BYOA bridge — exposes Hermes agent + typed workflow tools to a remote SaaS UI via a localhost relay."
+author: "BYOA"
+kind: standalone
+hooks: []
+provides_tools:
+  - weight_log
+  - bp_log
+  - glucose_log
+  - symptom_log
+  - report_register
+  - report_propose_value
+  - report_mark_processed
+  - appointment_create
+  - appointment_update
+  - appointment_add_followup_note
+  - appointment_get
+  - checklist_add_question
+  - checklist_add_answer
+  - checklist_finalize
+  - recent_metrics
+  - recent_symptoms
+  - appointments_summary
+  - documents_summary

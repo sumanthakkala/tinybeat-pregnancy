@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinybeat-pregnancy"
+version = "0.1.0"
+description = "Pregnancy domain plugin for BYOA — workflows, models, and migrations on top of byoh-bridge."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "tinybeat" }]
+keywords = ["hermes", "byoa", "byoh", "pregnancy", "plugin", "local-first", "sqlite"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+dependencies = [
+  "byoh-bridge",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tinybeat_pregnancy = [
+  "workflows/**/SKILL.md",
+  "safety/_safety.md",
+  "alembic/script.py.mako",
+  "alembic/versions/*.py",
+]
