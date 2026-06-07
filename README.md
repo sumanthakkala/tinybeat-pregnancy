@@ -50,10 +50,9 @@ The whole plugin is wired by one `AppConfig` in
 # 1) clone into Hermes's plugin dir (native installer)
 hermes --profile <profile> plugins install sumanthakkala/tinybeat-pregnancy --no-enable
 
-# 2) pip-install the clone into Hermes's venv so the package + byoh-bridge resolve.
-#    (byoh-bridge currently lives on TestPyPI; once it's on PyPI, plain `pip install <dir>` works.)
+# 2) pip-install the clone into Hermes's venv so the package + byoh-bridge
+#    (resolved from PyPI) are pulled in.
 ~/.hermes/hermes-agent/venv/bin/pip install \
-  -i https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ \
   ~/.hermes/profiles/<profile>/plugins/tinybeat-pregnancy
 
 # 3) enable + restart
